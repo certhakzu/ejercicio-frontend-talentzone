@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+status: string = "Form no submitted";
+
+  constructor() {
+    /* console.log("Dentro del constructos de app-home"); */
+
+  }
 
   ngOnInit(): void {
+    /* console.log("Dentro del ngOnInit de app-home"); */
+
+  }
+
+  onSendForm(){
+    /* alert("Formulario Enviado"); */
+    this.status = "Form has been send";
   }
 
 }

@@ -5,10 +5,10 @@ var database = { productos: [] };
 for (let ii=0; ii < 220; ii++) {
   database.productos.push({
     id: ii,
-    nombre: faker.commerce.productName(),
-    descripcion: faker.commerce.productDescription(),
-    precio: faker.commerce.price(),
-    cantidad: faker.random.numeric(),
+    name: faker.commerce.productName(),
+    description: faker.commerce.productDescription(),
+    price: faker.commerce.price(),
+    quantity: faker.random.numeric(),
     imageUrl: 'https://picsum.photos/400?random=' + ii
   });
 }
