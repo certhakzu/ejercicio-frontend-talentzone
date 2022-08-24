@@ -1,20 +1,5 @@
-<!-- <p>home works!</p>
-<p>Name</p>
-<input type="text" name="" [value]="defaultName">- ejemplo property bindind
+<p>home works!</p>
 
-<p>{{user}}</p>
-<input [(ngModel)]="user" type="text" name="">
-
-<p>Type of Videogame</p>
-<input type="text" name="">
-
-<br><hr>
-<button (click)="onSendForm()">Send Form</button> ejemplo event bindind 
-<p>{{status}}</p>< ejemplo de interpolation
-
-<hr>
-<button (click)="onDefaultForm()">Default Form</button> ejemplo event bindind
--->
 <div class="app-products-div">
     <mat-spinner *ngIf="products.length === 0"></mat-spinner>
   
@@ -30,7 +15,7 @@
         <img src="{{product.imageUrl}}" class="e-product-img" />
       </mat-card-content>
       <mat-card-actions>
-        <button mat-stroked-button color="primary">Buy Product</button>
+        <button mat-stroked-button color="primary">Comprar</button>
       </mat-card-actions>
     </mat-card>
   </div>

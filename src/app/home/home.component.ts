@@ -8,10 +8,8 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
-/*status: string = "Form no submitted";
-defaultName: string = "";
-user: string = "";*/
-  products = [];
+
+  products: any = [];
 
   constructor(private dataService: DataService) {
     /* console.log("Dentro del constructos de app-home"); */
@@ -26,12 +24,5 @@ user: string = "";*/
     });
   }
 
-  /*onSendForm(){
-    //alert("Formulario Enviado");
-    this.status = "Form has been send";
-  }*/
 
-  /*onDefaultForm(){
-    this.defaultName = "Fornite";
-  }*/
 }

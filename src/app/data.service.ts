@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private REST_API_SERVER = 'http://localhost:3000/products';
+  private REST_SERVER = 'http://localhost:3000/products';
   constructor(private httpClient: HttpClient) { }
 
   public sendGetRequest(): Observable<any> {
-    return this.httpClient.get(this.REST_API_SERVER);
+    return this.httpClient.get(this.REST_SERVER);
   }
 }
