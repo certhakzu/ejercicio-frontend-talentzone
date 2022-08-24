@@ -1,6 +1,37 @@
-<p>home works!</p>
-<p>Name</p><input type="text" name="">
-<p>Type of Videogame</p><input type="text" name="">
+<!-- <p>home works!</p>
+<p>Name</p>
+<input type="text" name="" [value]="defaultName">- ejemplo property bindind
+
+<p>{{user}}</p>
+<input [(ngModel)]="user" type="text" name="">
+
+<p>Type of Videogame</p>
+<input type="text" name="">
+
 <br><hr>
-<button (click)="onSendForm()">Send Form</button><!-- ejemplo event bindind -->
-<p>{{status}}</p><!-- ejemplo de interpolation -->
+<button (click)="onSendForm()">Send Form</button> ejemplo event bindind 
+<p>{{status}}</p>< ejemplo de interpolation
+
+<hr>
+<button (click)="onDefaultForm()">Default Form</button> ejemplo event bindind
+-->
+<div class="app-products-div">
+    <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+  
+    <mat-card *ngFor="let product of products" class="e-product-card">
+      <mat-card-header>
+        <mat-card-title>{{product.name}}</mat-card-title>
+        <mat-card-subtitle>{{product.price}} $ / {{product.quantity}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{product.description}}
+        </p>
+        <img src="{{product.imageUrl}}" class="e-product-img" />
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-stroked-button color="primary">Buy Product</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

@@ -1,3 +1,11 @@
-<p>Hola Este es el App Root</p>
-<app-home></app-home>
-<app-about></app-about>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-toolbar color="primary" class="main-app-toolbar">
+  <h1>
+    <mat-icon class="main-icon">shopping_basket</mat-icon>
+    <span>MyStore</span>
+  </h1>
+  <button mat-button routerLink="/">Home</button>
+  <button mat-button routerLink="/about">About</button>
+</mat-toolbar>
+<router-outlet></router-outlet>
